@@ -42,8 +42,7 @@ You can customise the extension by modifying the `MarksSelection.js` file in the
 
 ## Support and Feedback
 
-For support, bug reports, or feature requests, please create an [issue](https://github.com/Eddieisking/BA024Tableau_extension
-/issues) on GitHub.
+For support, bug reports, or feature requests, please create an [issue](https://github.com/Eddieisking/BA024Tableau_extension/issues) on GitHub.
 
 ## Contributing
 
