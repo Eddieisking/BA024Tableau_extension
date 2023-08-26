@@ -55,4 +55,4 @@ Contributions are welcome! If you'd like to improve this extension or fix issues
 
 Enjoy visualising and analysing your data in a new way with the Interactive GPT model for Tableau!
 
-![Map Analytics](/images/map_analytics.png)
+![Map Analytics](/images/Tableau_extension_sample.PNG)
