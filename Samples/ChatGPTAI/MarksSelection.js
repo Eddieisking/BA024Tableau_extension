@@ -172,7 +172,7 @@
 
     // Function to send the message to the chat service
     function sendMessageToChat(message) {
-      const token = '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';
+      const token = 'Your API KEY';
       const gptEL = document.getElementById('result_of_gpt');
 
       fetch('https://api.openai.com/v1/chat/completions', {
