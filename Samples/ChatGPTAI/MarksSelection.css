@@ -1,0 +1,38 @@
+h4,
+h5 {
+    text-align: center;
+}
+
+div.DTS div.dataTables_scrollBody {
+    background: white;
+}
+
+.sheet_name {
+    font-weight: bold;
+}
+
+#sendToChatButton {
+  margin-left: auto; /* Push the button to the right */
+  /*margin-right: 30px; !* Add some spacing from the right edge *!*/
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#userInput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+/* For example: */
+#result_of_gpt {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f7f7f7;
+}
