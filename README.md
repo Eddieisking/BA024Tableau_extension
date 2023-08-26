@@ -1,73 +1,63 @@
-# Tableau Extensions API
-[![Tableau Supported](https://img.shields.io/badge/Support%20Level-Tableau%20Supported-53bd92.svg)](https://www.tableau.com/support-levels-it-and-developer-tools)
+# Tableau Extension: Interactive Sales Map
 
-![Image of Flex the T-Rex](./assets/flex.png)
+![Extension Preview](/images/extension_preview.png)
 
-## Why the Tableau Extensions API?
-The Extensions API lets you do more without leaving Tableau. Build Tableau extensions that can interact and communicate with Tableau, and embed them directly in your workbooks.
+## Description
 
-## Setup and Running Samples
+The Interactive Sales Map is a custom Tableau extension that allows you to visualize sales data on an interactive map. This extension enhances your Tableau dashboard by displaying sales figures in a geospatial context, making it easier to identify sales trends based on geographic locations.
 
-### Prerequisites
-* You must have Node.js and npm installed. You can get these from [https://nodejs.org](https://nodejs.org).
+## Features
 
-### Install Extensions API SDK Components and Start Server
+- Display sales data points on a map.
+- Filter data based on date, product, or region.
+- Click on data points to view detailed sales information.
 
-1. Open a command prompt window to the location where you cloned this repo.
+## Prerequisites
 
-2. Install the Extensions API SDK components.
+Before using this extension, ensure that you have the following:
 
-    **npm install**
+- A Tableau dashboard.
+- A dataset with geographical data (latitude and longitude) and associated sales information.
 
-3. Build the TypeScript samples and install the Extensions API types library.
+## Installation
 
-   **npm run build**
+1. Download the latest release of the extension from the [Releases](https://github.com/yourusername/interactive-sales-map/releases) section.
+2. Extract the downloaded ZIP file to a location on your computer.
 
-4. Start the local Dashboard Extension server.
+## Usage
 
-   **npm start**
+1. Open your Tableau dashboard in Edit mode.
+2. Drag and drop a new "Web Page" object onto the dashboard.
+3. In the URL field of the Web Page object, enter the path to the `index.html` file of the downloaded extension.
 
-5. Launch Tableau and try the sample extensions in a dashboard. The samples are located in the `Samples` folder.
+   Example: `/path/to/extracted/extension/index.html`
 
- >**Note** The local web server you start just serves to host the extension samples and extensions used in the tutorial, which have URLs similar to the following: `http://localhost:8765/Samples/DataSources/datasources.html` or `http://localhost:8765/Samples-Typescript/DataSources/datasources.html`
- >   This local web server is not intended to serve the Extensions API Help pages. 
- >   View the Help on GitHub at [https://tableau.github.io/extensions-api](https://tableau.github.io/extensions-api).
+4. Adjust the size of the Web Page object to fit your desired location on the dashboard.
+5. Interact with the map to visualize sales data. Use the available filters to refine your view.
 
-### Typescript Development
-Samples written in Typescript are located in the `Samples-Typescript` folder.
-If you want to use TypeScript to write your extensions, you can run a script that starts up the HTTP server and actively listens for changes to the `.ts` files located in the `Samples-Typescript` folder. You can then add your extension to the folder and use the script to transpile your extension to JavaScript.
+## Configuration
 
-* To start the the HTTP server and listen for changes to the `.ts` files.
+You can customize the extension by modifying the `config.js` file located in the extension's directory. The configuration file allows you to set options such as map styling, data sources, and default filters.
 
-    **npm run dev**
+## Support and Feedback
 
-For more information, see [Use TypeScript with the Extensions API](https://tableau.github.io/extensions-api/docs/trex_typescript.html).
+For support, bug reports, or feature requests, please create an [issue](https://github.com/yourusername/interactive-sales-map/issues) on GitHub.
 
-### Sandboxed Extension Development Environment
+## Contributing
 
-Tableau is introducing development support for Sandboxed Extensions with Tableau 2019.3. Sandboxed Extensions run in a virtual sandbox and ensure the extension can’t make network calls outside of the hosting Tableau Server. The Extensions API SDK provides a local development environment that replicates the Tableau Hosting Cloud Service for Sandboxed Extensions. You can test your Sandboxed extensions locally with the same sandbox policies.
+Contributions are welcome! If you'd like to improve this extension or fix issues, please follow these steps:
 
-1. Start the local Sandboxed Extension web server.
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Make your changes and test thoroughly.
+4. Submit a pull request with a clear description of your changes.
 
-    **npm run start-sandbox**
+## License
 
-2. Launch Tableau (Tableau 2019.3 and later) and try the sample Sandboxed Extension in a dashboard. You can find the `.trex` file and sample code in the `Samples\UINamespace-sandboxed` folder.
+This extension is released under the [MIT License](LICENSE).
 
-For more information, see [Create and Test Sandboxed Extensions](https://tableau.github.io/extensions-api/docs/trex_sandbox_test.html).
+---
 
-## Contributions
-Contributions and improvements by the community are welcomed!
-See the LICENSE file for current open-source licensing and use information.
+Enjoy visualizing your sales data in a whole new way with the Interactive Sales Map extension for Tableau!
 
-Before we can accept pull requests from contributors, we require a signed [Contributor License Agreement (CLA)](https://tableau.github.io/contributing.html). To submit a contribution, please fork the repository then submit a pull request to the `main` branch.
-
-## Code Style
-Our sample code follows the [Semi-Standard Style](https://github.com/Flet/semistandard) for JavaScript samples linting and [tslint](https://palantir.github.io/tslint/) for TypeScript.  If you add your own extension code to the Samples or Samples-Typescript directories, you can run `npm run lint` to validate the style of your code.  Please run this command before submitting any pull requests for Sample code.
-
-`npx semistandard --fix` to fix linting issues which can be fixed automatically.
-
-## Documentation
-[Visit the project website and read the documentation here.](https://tableau.github.io/extensions-api/)
-
-## Issues
-Use [Issues](https://github.com/tableau/extensions-api/issues) to log any problems or bugs you encounter in the docs or sample code, or to discuss any proposed changes or additions.
+![Map Analytics](/images/map_analytics.png)
