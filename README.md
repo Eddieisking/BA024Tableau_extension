@@ -1,6 +1,6 @@
 # Tableau Extension: ChatGPT AI
 
-![Extension Preview](/images/Tableau_extension_review.png)
+![Extension Preview](/images/Tableau_extension_review.PNG)
 
 ## Description
 
