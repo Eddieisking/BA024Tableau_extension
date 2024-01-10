@@ -32,7 +32,7 @@ Before using this extension, ensure that you have the following:
 1. Open your terminal and navigate to the extension directory './download/BA024Tableau_extention'.
 2. Run the command: npm install; npm run build; npm start.
 3. Open your Tableau Desktop and build a Dashboard.
-4. In your Dashboard, click the 'Extension' button in the left bottom area. Then click 'Access Local Extensions', find and open the ChatGPTAI.trex at './download/BA024Tableau_extention/Samples/ChatCPTAI/ChatGPTAI.trex'.
+4. In your Dashboard, click the 'Extension' button in the left bottom area. Then click 'Access Local Extensions', find and open the ChatGPTAI.trex at './download/BA024Tableau_extention/Samples/ChatGPTAI/ChatGPTAI.trex'.
 5. Before using it. You need to add your 'API_KEY' to the './download/BA024Tableau_extention/Samples/ChatCPTAI/MarksSelection.js' file.
 6. Then, you can select the data and type the question in the input box to start. 
 
